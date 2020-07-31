@@ -1,0 +1,341 @@
+{% extends 'base.html' %}
+{% block title %}Services{% endblock title %}
+{% block body %}
+<!doctype html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+  
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Statistics <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Integrations
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <td>Product</td><td>Min_optimal Temp</td><td>Max_optimal Temp</td><td>Freezing Point</td><td>Min_optimal Humidity</td><td>Max_optimal Humidity</td><td>Appoximate storage life</td><td>Oxygen_Conc%</td><td>CO2_Conc%</td><td>Price per lb</td><td>Quantity in lb/oz</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tbody><tr><td>Apples</td><td>30</td><td>40</td><td>29.3</td><td>90</td><td>95</td><td>12 months</td><td>0.5</td><td>6</td><td>2.24</td><td>10
+</td></tr><tr><td>Apricots</td><td>31</td><td>32</td><td>30.1</td><td>90</td><td>95</td><td>3 weeks</td><td>4</td><td>0.5</td><td>4.48</td><td>4
+</td></tr><tr><td>Artichokes</td><td>32</td><td>35</td><td>28</td><td>90</td><td>95</td><td>1 week</td><td>3</td><td>0.25</td><td>2.48</td><td>5
+</td></tr><tr><td>Artichokes_Jerusalem</td><td>31</td><td>32</td><td>28</td><td>90</td><td>95</td><td>5 months</td><td>1</td><td>5</td><td>4.21</td><td>5
+</td></tr><tr><td>Asparagus</td><td>32</td><td>35</td><td>30.9</td><td>95</td><td>100</td><td>3 weeks</td><td>2.5</td><td>0.1</td><td>3.49</td><td>3
+</td></tr><tr><td>Avocados_ripe</td><td>38</td><td>45</td><td>29.5</td><td>85</td><td>95</td><td>4 days</td><td>1</td><td>6</td><td>3</td><td>15
+</td></tr><tr><td>Avocados_unripe</td><td>45</td><td>50</td><td>29.5</td><td>85</td><td>95</td><td>3-7 days</td><td>4</td><td>0.5</td><td>2.49</td><td>14
+</td></tr><tr><td>Bananas_green</td><td>62</td><td>70</td><td>30.6</td><td>85</td><td>95</td><td>1-2 weeks</td><td>1</td><td>5</td><td>0.25</td><td>20
+</td></tr><tr><td>Bananas_ripe</td><td>56</td><td>60</td><td>31.1</td><td>85</td><td>95</td><td>3-5 days</td><td>2.5</td><td>1</td><td>1</td><td>20
+</td></tr><tr><td>Basil</td><td>52</td><td>59</td><td>30.3</td><td>90</td><td>95</td><td>1-2 weeks</td><td>2.5</td><td>0.5</td><td>6.9</td><td>5
+</td></tr><tr><td>Beans_ dry</td><td>40</td><td>50</td><td>NA</td><td>40</td><td>50</td><td>10 months</td><td>2.5</td><td>0.5</td><td>2.99</td><td>10
+</td></tr><tr><td>Beans_ green or snap</td><td>40</td><td>45</td><td>30.7</td><td>95</td><td>95</td><td>10 days</td><td>3</td><td>1</td><td>3</td><td>20
+</td></tr><tr><td>Beans_ sprouts</td><td>32</td><td>32</td><td>29.5</td><td>95</td><td>100</td><td>9 days</td><td>2.5</td><td>0.5</td><td>5.99</td><td>20
+</td></tr><tr><td>Beans_Lima</td><td>37</td><td>41</td><td>31</td><td>95</td><td>95</td><td>7 days</td><td>2.5</td><td>0.5</td><td>1.31</td><td>20
+</td></tr><tr><td>Beets</td><td>32</td><td>35</td><td>28</td><td>90</td><td>95</td><td>10 days</td><td>2</td><td>0.5</td><td>2.49</td><td>10
+</td></tr><tr><td>Beets_ bunched</td><td>32</td><td>32</td><td>31.3</td><td>98</td><td>100</td><td>14 days</td><td>2.5</td><td>0.5</td><td>1</td><td>10
+</td></tr><tr><td>Beets_ topped</td><td>32</td><td>32</td><td>30.3</td><td>98</td><td>100</td><td>6 months</td><td>2.5</td><td>0.5</td><td>2</td><td>10
+</td></tr><tr><td>Blackberries</td><td>32</td><td>33</td><td>30.5</td><td>90</td><td>95</td><td>3 days</td><td>2.5</td><td>1</td><td>2.99</td><td>12
+</td></tr><tr><td>Blueberries</td><td>32</td><td>35</td><td>29</td><td>90</td><td>95</td><td>1-2 weeks</td><td>2.5</td><td>2</td><td>4</td><td>12
+</td></tr><tr><td>Bok Choy</td><td>32</td><td>35</td><td>30</td><td>90</td><td>95</td><td>3-4 days</td><td>2.5</td><td>0.5</td><td>1.99</td><td>14
+</td></tr><tr><td>Broccoli</td><td>32</td><td>32</td><td>30.9</td><td>95</td><td>100</td><td>14 days</td><td>3.5</td><td>0.5</td><td>2.49</td><td>5
+</td></tr><tr><td>Brussels Sprouts</td><td>32</td><td>32</td><td>30.5</td><td>90</td><td>95</td><td>5 weeks</td><td>2.5</td><td>0.5</td><td>3.99</td><td>4
+</td></tr><tr><td>Bunched Greens</td><td>32</td><td>32</td><td>28</td><td>90</td><td>95</td><td>1 week</td><td>2.5</td><td>0.5</td><td>2</td><td>4
+</td></tr><tr><td>Cabbage_ Chinese</td><td>32</td><td>32</td><td>28</td><td>95</td><td>100</td><td>3 months</td><td>1</td><td>2</td><td>4</td><td>15
+</td></tr><tr><td>Cabbage_ early</td><td>32</td><td>32</td><td>30.4</td><td>98</td><td>100</td><td>6 weeks</td><td>2.5</td><td>0.5</td><td>3.49</td><td>15
+</td></tr><tr><td>Cabbage_ late</td><td>32</td><td>32</td><td>30.4</td><td>98</td><td>100</td><td>6 months</td><td>2.5</td><td>3</td><td>2</td><td>15
+</td></tr><tr><td>Cantaloupe</td><td>36</td><td>38</td><td>30.1</td><td>90</td><td>95</td><td>7-10 days</td><td>3</td><td>0.5</td><td>2.99</td><td>20
+</td></tr><tr><td>Carrots_ bunched</td><td>32</td><td>32</td><td>28.2</td><td>95</td><td>100</td><td>2 weeks</td><td>2.5</td><td>0.5</td><td>4.99</td><td>10
+</td></tr><tr><td>Carrots_ immature</td><td>32</td><td>32</td><td>29.5</td><td>98</td><td>100</td><td>6 weeks</td><td>3</td><td>0.5</td><td>3.99</td><td>10
+</td></tr><tr><td>Carrots_ mature</td><td>32</td><td>32</td><td>29.5</td><td>98</td><td>100</td><td>9 months</td><td>2.5</td><td>3</td><td>2.49</td><td>10
+</td></tr><tr><td>Cauliflower</td><td>32</td><td>32</td><td>30.6</td><td>95</td><td>98</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>2.99</td><td>15
+</td></tr><tr><td>Celery</td><td>32</td><td>32</td><td>31.1</td><td>98</td><td>100</td><td>3 months</td><td>5</td><td>1</td><td>3.64</td><td>15
+</td></tr><tr><td>Celeriac</td><td>32</td><td>32</td><td>30.3</td><td>97</td><td>99</td><td>8 months</td><td>2.5</td><td>0.5</td><td>4</td><td>13
+</td></tr><tr><td>Chard</td><td>32</td><td>32</td><td>28.5</td><td>95</td><td>100</td><td>14 days</td><td>2.5</td><td>0.5</td><td>2</td><td>12
+</td></tr><tr><td>Cherries</td><td>32</td><td>35</td><td>31</td><td>90</td><td>95</td><td>4-10 days</td><td>2.5</td><td>0.5</td><td>4.29</td><td>15
+</td></tr><tr><td>Cherries_ sour</td><td>32</td><td>32</td><td>29</td><td>90</td><td>95</td><td>7 days</td><td>2.5</td><td>0.5</td><td>5</td><td>20
+</td></tr><tr><td>Cherries_ sweet</td><td>30</td><td>31</td><td>28.8</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>2</td><td>4</td><td>17
+</td></tr><tr><td>Chicory</td><td>32</td><td>35</td><td>32</td><td>90</td><td>95</td><td>3-5 days</td><td>2.5</td><td>0.5</td><td>6.99</td><td>18
+</td></tr><tr><td>Chicory_ witloof</td><td>32</td><td>32</td><td>28.5</td><td>95</td><td>100</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>4.29</td><td>15
+</td></tr><tr><td>Chinese Pea Pods</td><td>32</td><td>35</td><td>28</td><td>90</td><td>95</td><td>1 year</td><td>2.5</td><td>0.5</td><td>2</td><td>20
+</td></tr><tr><td>Coconuts</td><td>55</td><td>60</td><td>NA</td><td>80</td><td>85</td><td>4 months</td><td>2.5</td><td>0.5</td><td>5.26</td><td>10
+</td></tr><tr><td>Collards</td><td>32</td><td>32</td><td>30.6</td><td>95</td><td>100</td><td>14 days</td><td>2.5</td><td>0.5</td><td>5</td><td>4
+</td></tr><tr><td>Corn_ sweet</td><td>32</td><td>32</td><td>30.9</td><td>95</td><td>98</td><td>8 days</td><td>5</td><td>3</td><td>6</td><td>5
+</td></tr><tr><td>Cranberries</td><td>38</td><td>42</td><td>32</td><td>90</td><td>95</td><td>2-4 weeks</td><td>2.5</td><td>0.5</td><td>4.99</td><td>5
+</td></tr><tr><td>Cucumbers</td><td>50</td><td>55</td><td>31.1</td><td>95</td><td>95</td><td>14 days</td><td>2.5</td><td>3</td><td>0.69</td><td>3
+</td></tr><tr><td>Currants</td><td>31</td><td>32</td><td>30.2</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>15
+</td></tr><tr><td>Eggplant</td><td>46</td><td>54</td><td>30.6</td><td>90</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>1</td><td>14
+</td></tr><tr><td>Elderberries</td><td>31</td><td>32</td><td>28</td><td>90</td><td>95</td><td>2 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>20
+</td></tr><tr><td>Endive</td><td>32</td><td>32</td><td>31.9</td><td>95</td><td>100</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>3.49</td><td>20
+</td></tr><tr><td>Escarole</td><td>32</td><td>35</td><td>28.5</td><td>90</td><td>95</td><td>3-5 days</td><td>2.5</td><td>0.5</td><td>0.49</td><td>5
+</td></tr><tr><td>Figs</td><td>32</td><td>32</td><td>31.9</td><td>95</td><td>100</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>3.98</td><td>10
+</td></tr><tr><td>Garlic</td><td>32</td><td>35</td><td>28.5</td><td>90</td><td>95</td><td>10 days</td><td>2.5</td><td>2</td><td>3</td><td>20
+</td></tr><tr><td>Ginger Root</td><td>32</td><td>32</td><td>30.5</td><td>65</td><td>70</td><td>7 months</td><td>4</td><td>2</td><td>0.5</td><td>20
+</td></tr><tr><td>Gooseberries</td><td>60</td><td>65</td><td>32</td><td>65</td><td>70</td><td>10-21 days</td><td>4</td><td>2</td><td>2</td><td>20
+</td></tr><tr><td>Grapefruit</td><td>31</td><td>32</td><td>30</td><td>90</td><td>95</td><td>4 weeks</td><td>4</td><td>0.5</td><td>3</td><td>10
+</td></tr><tr><td>Grapes</td><td>55</td><td>60</td><td>31</td><td>90</td><td>95</td><td>7-14 days</td><td>2.5</td><td>0.5</td><td>2.49</td><td>10
+</td></tr><tr><td>Green Beans</td><td>31</td><td>32</td><td>29.7</td><td>85</td><td>85</td><td>8 weeks</td><td>2</td><td>3</td><td>6</td><td>10
+</td></tr><tr><td>Green Peas</td><td>40</td><td>45</td><td>32</td><td>90</td><td>95</td><td>1 year</td><td>2.5</td><td>0.5</td><td>4.29</td><td>12
+</td></tr><tr><td>Greens_ leafy</td><td>32</td><td>35</td><td>29</td><td>90</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>2</td><td>12
+</td></tr><tr><td>Guavas</td><td>32</td><td>32</td><td>28.5</td><td>95</td><td>100</td><td>14 days</td><td>2.5</td><td>4</td><td>2.49</td><td>14
+</td></tr><tr><td>Herbs</td><td>45</td><td>50</td><td>29</td><td>90</td><td>95</td><td>1 year</td><td>2.5</td><td>0.5</td><td>1</td><td>5
+</td></tr><tr><td>Horseradish</td><td>32</td><td>35</td><td>30</td><td>90</td><td>95</td><td>3-4 months</td><td>2.5</td><td>3</td><td>2.24</td><td>4
+</td></tr><tr><td>Jicama</td><td>30</td><td>32</td><td>28.7</td><td>98</td><td>100</td><td>12 months</td><td>2.5</td><td>0.5</td><td>4.48</td><td>4
+</td></tr><tr><td>Kale</td><td>55</td><td>65</td><td>NA</td><td>65</td><td>70</td><td>2 months</td><td>2.5</td><td>0.5</td><td>2.48</td><td>15
+</td></tr><tr><td>Kiwi_ ripe</td><td>32</td><td>32</td><td>31.1</td><td>95</td><td>100</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>4.21</td><td>15
+</td></tr><tr><td>Kiwi_ unripe</td><td>32</td><td>35</td><td>28.5</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>3</td><td>3.49</td><td>15
+</td></tr><tr><td>Kohlrabi</td><td>32</td><td>35</td><td>29</td><td>90</td><td>95</td><td>2-4 weeks</td><td>2.5</td><td>0.5</td><td>3</td><td>20
+</td></tr><tr><td>Leeks</td><td>32</td><td>32</td><td>30.2</td><td>98</td><td>100</td><td>3 months</td><td>2.5</td><td>0.5</td><td>2.49</td><td>10
+</td></tr><tr><td>Lemons</td><td>32</td><td>32</td><td>30.7</td><td>95</td><td>100</td><td>3 months</td><td>2.5</td><td>0.5</td><td>0.25</td><td>10
+</td></tr><tr><td>Lettuce</td><td>52</td><td>55</td><td>31</td><td>90</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>1</td><td>10
+</td></tr><tr><td>Limes</td><td>32</td><td>32</td><td>31.7</td><td>98</td><td>100</td><td>3 weeks</td><td>2.5</td><td>2</td><td>6.9</td><td>15
+</td></tr><tr><td>Lychees</td><td>48</td><td>55</td><td>30.5</td><td>90</td><td>95</td><td>24 days</td><td>2.5</td><td>0.5</td><td>2.99</td><td>15
+</td></tr><tr><td>Mangos</td><td>40</td><td>45</td><td>31</td><td>90</td><td>95</td><td>7-14 days</td><td>2.5</td><td>0.5</td><td>3</td><td>13
+</td></tr><tr><td>Melons_ Casaba/Persian</td><td>50</td><td>55</td><td>30.5</td><td>85</td><td>95</td><td>14-21 days</td><td>2.5</td><td>0.5</td><td>5.99</td><td>12
+</td></tr><tr><td>Melons_ Crenshaw</td><td>50</td><td>55</td><td>32</td><td>85</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>1.31</td><td>15
+</td></tr><tr><td>Melons_ Honey Dew</td><td>50</td><td>55</td><td>31.5</td><td>85</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>2.49</td><td>20
+</td></tr><tr><td>Mushrooms</td><td>50</td><td>55</td><td>30</td><td>85</td><td>95</td><td>10 days</td><td>2.5</td><td>0.5</td><td>1</td><td>17
+</td></tr><tr><td>Napa</td><td>32</td><td>32</td><td>30.4</td><td>95</td><td>95</td><td>4 days</td><td>2.5</td><td>0.5</td><td>2</td><td>18
+</td></tr><tr><td>Nectarines</td><td>32</td><td>35</td><td>28.5</td><td>90</td><td>95</td><td>3-5 days</td><td>2.5</td><td>0.5</td><td>2.99</td><td>15
+</td></tr><tr><td>Okra</td><td>31</td><td>32</td><td>30.4</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>4</td><td>20
+</td></tr><tr><td>Onions</td><td>45</td><td>50</td><td>28.7</td><td>90</td><td>95</td><td>10 days</td><td>2.5</td><td>0.5</td><td>1.99</td><td>10
+</td></tr><tr><td>Oranges</td><td>32</td><td>35</td><td>29.5</td><td>65</td><td>75</td><td>14 days</td><td>2.5</td><td>0.5</td><td>2.49</td><td>4
+</td></tr><tr><td>Papayas</td><td>40</td><td>45</td><td>30</td><td>90</td><td>95</td><td>5-7 days</td><td>2.5</td><td>0.5</td><td>3.99</td><td>5
+</td></tr><tr><td>Parsley</td><td>50</td><td>55</td><td>29.5</td><td>85</td><td>95</td><td>2 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>5
+</td></tr><tr><td>Parsnips</td><td>32</td><td>32</td><td>30</td><td>95</td><td>100</td><td>3 months</td><td>2.5</td><td>0.5</td><td>4</td><td>3
+</td></tr><tr><td>Peaches</td><td>32</td><td>32</td><td>30.4</td><td>98</td><td>100</td><td>6 months</td><td>2.5</td><td>0.5</td><td>3.49</td><td>15
+</td></tr><tr><td>Pears</td><td>31</td><td>32</td><td>30.3</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>14
+</td></tr><tr><td>Peas_ green</td><td>29</td><td>31</td><td>29.2</td><td>90</td><td>95</td><td>7 months</td><td>2.5</td><td>0.5</td><td>2.99</td><td>20
+</td></tr><tr><td>Peas_ southern</td><td>32</td><td>32</td><td>30.9</td><td>95</td><td>98</td><td>2 weeks</td><td>2.5</td><td>0.5</td><td>4.99</td><td>20
+</td></tr><tr><td>Peppers_ hot chili</td><td>40</td><td>41</td><td>31</td><td>95</td><td>95</td><td>8 days</td><td>2.5</td><td>0.5</td><td>3.99</td><td>5
+</td></tr><tr><td>Peppers_ sweet</td><td>32</td><td>50</td><td>29.5</td><td>60</td><td>70</td><td>1-2 weeks</td><td>4</td><td>0.5</td><td>2.49</td><td>10
+</td></tr><tr><td>Persimmons</td><td>45</td><td>55</td><td>30.7</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>2.99</td><td>20
+</td></tr><tr><td>Pineapples</td><td>32</td><td>35</td><td>31.5</td><td>90</td><td>95</td><td>1-2 days</td><td>2.5</td><td>0.5</td><td>3.64</td><td>20
+</td></tr><tr><td>Plums</td><td>50</td><td>55</td><td>32</td><td>85</td><td>95</td><td>3-5 days</td><td>3.5</td><td>0.5</td><td>4</td><td>20
+</td></tr><tr><td>Pomegranates</td><td>41</td><td>32</td><td>30.5</td><td>90</td><td>95</td><td>5 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>10
+</td></tr><tr><td>Potatoes</td><td>41</td><td>50</td><td>29.5</td><td>90</td><td>95</td><td>1 week</td><td>4</td><td>1</td><td>4.29</td><td>10
+</td></tr><tr><td>Precut Fruit</td><td>45</td><td>50</td><td>NA</td><td>90</td><td>95</td><td>3-5 days</td><td>4</td><td>0.5</td><td>5</td><td>10
+</td></tr><tr><td>Precut Vegetables</td><td>32</td><td>36</td><td>31</td><td>90</td><td>95</td><td>2-3 days</td><td>2.5</td><td>0.5</td><td>4</td><td>12
+</td></tr><tr><td>Prunes</td><td>32</td><td>36</td><td>28.5</td><td>90</td><td>95</td><td>6 months</td><td>2.5</td><td>0.5</td><td>6.99</td><td>12
+</td></tr><tr><td>Pumpkins</td><td>31</td><td>32</td><td>30.5</td><td>90</td><td>95</td><td>5 weeks</td><td>2.5</td><td>0.5</td><td>4.29</td><td>14
+</td></tr><tr><td>Quinces</td><td>50</td><td>55</td><td>30.5</td><td>65</td><td>70</td><td>3 months</td><td>3</td><td>0.5</td><td>2</td><td>5
+</td></tr><tr><td>Quinces</td><td>31</td><td>32</td><td>28.4</td><td>90</td><td>90</td><td>3 months</td><td>2.5</td><td>0.5</td><td>5.26</td><td>4
+</td></tr><tr><td>Radishes_ spring</td><td>32</td><td>32</td><td>30.7</td><td>95</td><td>100</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>5</td><td>4
+</td></tr><tr><td>Radishes_ winter</td><td>32</td><td>32</td><td>28.5</td><td>95</td><td>100</td><td>4 months</td><td>2.5</td><td>0.5</td><td>6</td><td>15
+</td></tr><tr><td>Raspberries</td><td>31</td><td>32</td><td>30</td><td>90</td><td>95</td><td>3 days</td><td>2.5</td><td>0.5</td><td>4.99</td><td>15
+</td></tr><tr><td>Rhubarb</td><td>32</td><td>32</td><td>30.3</td><td>95</td><td>100</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>0.69</td><td>15
+</td></tr><tr><td>Rutabagas</td><td>32</td><td>32</td><td>30</td><td>98</td><td>100</td><td>6 months</td><td>2.5</td><td>0.5</td><td>2</td><td>20
+</td></tr><tr><td>Salad Mixes</td><td>32</td><td>35</td><td>29.5</td><td>90</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>1</td><td>10
+</td></tr><tr><td>Salsify</td><td>32</td><td>32</td><td>30</td><td>95</td><td>98</td><td>4 months</td><td>2.5</td><td>0.5</td><td>2</td><td>10
+</td></tr><tr><td>Spinach</td><td>32</td><td>32</td><td>31.5</td><td>95</td><td>100</td><td>14 days</td><td>1.5</td><td>0.5</td><td>3.49</td><td>10
+</td></tr><tr><td>Sprouts</td><td>32</td><td>35</td><td>29</td><td>90</td><td>95</td><td>6 weeks</td><td>2.5</td><td>0.5</td><td>0.49</td><td>15
+</td></tr><tr><td>Squashes_ summer</td><td>41</td><td>50</td><td>31.1</td><td>95</td><td>95</td><td>2 weeks</td><td>2.5</td><td>0.5</td><td>3.98</td><td>15
+</td></tr><tr><td>Squashes_ winter</td><td>50</td><td>50</td><td>30.5</td><td>50</td><td>70</td><td>6 months</td><td>2.5</td><td>0.5</td><td>3</td><td>13
+</td></tr><tr><td>Strawberries</td><td>32</td><td>32</td><td>30.6</td><td>90</td><td>95</td><td>7 days</td><td>2.5</td><td>0.5</td><td>0.5</td><td>12
+</td></tr><tr><td>Sweet Potatoes</td><td>55</td><td>60</td><td>29.7</td><td>85</td><td>90</td><td>7 months</td><td>5</td><td>0.5</td><td>2</td><td>15
+</td></tr><tr><td>Tangerines</td><td>55</td><td>70</td><td>31</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>1</td><td>2.49</td><td>17
+</td></tr><tr><td>Tomatoes_ mature green</td><td>55</td><td>70</td><td>31.1</td><td>90</td><td>95</td><td>7 days</td><td>2.5</td><td>3</td><td>6</td><td>18
+</td></tr><tr><td>Tomatoes_ ripe</td><td>32</td><td>32</td><td>31.7</td><td>95</td><td>100</td><td>14 days</td><td>2.5</td><td>0.5</td><td>4.29</td><td>15
+</td></tr><tr><td>Turnip greens</td><td>32</td><td>32</td><td>30.1</td><td>95</td><td>95</td><td>5 months</td><td>2.5</td><td>0.5</td><td>2</td><td>20
+</td></tr><tr><td>Turnips</td><td>32</td><td>32</td><td>31.4</td><td>95</td><td>100</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>2.49</td><td>10
+</td></tr><tr><td>Watercress</td><td>55</td><td>70</td><td>29.3</td><td>85</td><td>95</td><td>12 months</td><td>0</td><td>0.5</td><td>1</td><td>4
+</td></tr><tr><td>Watermelon</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>5 months</td><td>4</td><td>0.25</td><td>0</td><td>5
+</td></tr><tr><td>Basmati Rice</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>1 year</td><td>3</td><td>5</td><td>5</td><td>15
+</td></tr><tr><td>Brown Rice </td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>3-6 months</td><td>1</td><td>0.1</td><td>6</td><td>14
+</td></tr><tr><td>Wheat Flour </td><td>65</td><td>70</td><td>NA</td><td>85</td><td>95</td><td>6 months</td><td>2.5</td><td>6</td><td>3.99</td><td>20
+</td></tr><tr><td>All-purpose flour</td><td>65</td><td>70</td><td>NA</td><td>85</td><td>95</td><td>8 months</td><td>1</td><td>0.5</td><td>2.99</td><td>20
+</td></tr><tr><td>Rice Flour</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>10 months</td><td>2.5</td><td>0.5</td><td>4.29</td><td>20
+</td></tr><tr><td>Pasta</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>95</td><td>9 days</td><td>2.5</td><td>1</td><td>3</td><td>20
+</td></tr><tr><td>Noodles </td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>7 days</td><td>3</td><td>0.5</td><td>6</td><td>10
+</td></tr><tr><td>Vermicelli</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>3 days</td><td>2.5</td><td>0.5</td><td>2</td><td>12
+</td></tr><tr><td>Urad Dal</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>14 days</td><td>2.5</td><td>0.5</td><td>4</td><td>4
+</td></tr><tr><td>Toor Dal</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>5 weeks</td><td>2.5</td><td>0.5</td><td>5.2</td><td>4
+</td></tr><tr><td>Moong Dal</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3-4 months</td><td>3.5</td><td>0.5</td><td>3</td><td>15
+</td></tr><tr><td>Channa Dal</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 months</td><td>2.5</td><td>0.5</td><td>2</td><td>15
+</td></tr><tr><td>Chickpeas</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>6 weeks</td><td>2.5</td><td>2</td><td>3.29</td><td>15
+</td></tr><tr><td>Dried Green Peas</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>6 months</td><td>1</td><td>0.5</td><td>3</td><td>20
+</td></tr><tr><td>Green Gram</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>2-3 days</td><td>2.5</td><td>3</td><td>4.25</td><td>10
+</td></tr><tr><td>Black Eye Beans</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>2-3 years</td><td>2.5</td><td>0.5</td><td>2.99</td><td>10
+</td></tr><tr><td>Frozen Green peas</td><td>31</td><td>33</td><td>NA</td><td>95</td><td>100</td><td>6 weeks</td><td>3</td><td>0.5</td><td>2.59</td><td>10
+</td></tr><tr><td>Frozen Corn</td><td>31</td><td>33</td><td>NA</td><td>98</td><td>100</td><td>9 months</td><td>2.5</td><td>0.5</td><td>5</td><td>15
+</td></tr><tr><td> Vegetable Oil</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>4 weeks</td><td>3</td><td>3</td><td>6</td><td>15
+</td></tr><tr><td>Groundnut Oil</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>98</td><td>3 months</td><td>2.5</td><td>0.5</td><td>3.99</td><td>13
+</td></tr><tr><td>Sesame Oil</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>8 months</td><td>2.5</td><td>1</td><td>2</td><td>12
+</td></tr><tr><td>Coconut Oil</td><td>65</td><td>70</td><td>NA</td><td>97</td><td>99</td><td>14 days</td><td>5</td><td>0.5</td><td>2.99</td><td>15
+</td></tr><tr><td>Olive Oil</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>20 months</td><td>2.5</td><td>0.5</td><td>4</td><td>20
+</td></tr><tr><td>Ghee</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>7 days</td><td>2.5</td><td>0.5</td><td>4.29</td><td>17
+</td></tr><tr><td>Butter</td><td>32</td><td>38</td><td>NA</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>2.5</td><td>18
+</td></tr><tr><td>Salt</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>5 years</td><td>2.5</td><td>2</td><td>3</td><td>10
+</td></tr><tr><td>Crystal Salt</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>3</td><td>10
+</td></tr><tr><td>Sugar</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>2 years</td><td>2.5</td><td>0.5</td><td>2</td><td>10
+</td></tr><tr><td>Jaggery</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>8 months</td><td>2.5</td><td>0.5</td><td>4.29</td><td>10
+</td></tr><tr><td>Palm Jaggery</td><td>65</td><td>70</td><td>NA</td><td>80</td><td>85</td><td>14 days</td><td>2.5</td><td>0.5</td><td>4</td><td>10
+</td></tr><tr><td>Tea</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>8 days</td><td>2.5</td><td>0.5</td><td>2</td><td>12
+</td></tr><tr><td>Coffee</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>98</td><td>3-5 months</td><td>2.5</td><td>3</td><td>3</td><td>10
+</td></tr><tr><td>Health Drinks</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>14 days</td><td>5</td><td>0.5</td><td>2.49</td><td>20
+</td></tr><tr><td>Chocolate Syrup/ Caramel Syrup / Strawberry Syrup</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>95</td><td>4 weeks</td><td>2.5</td><td>3</td><td>4</td><td>10
+</td></tr><tr><td>Tamarind</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 months</td><td>2.5</td><td>0.5</td><td>5.2</td><td>20
+</td></tr><tr><td>Asafoetida</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>2 weeks</td><td>2.5</td><td>0.5</td><td>3</td><td>20
+</td></tr><tr><td>Dry Red Chilies</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>20
+</td></tr><tr><td>Mustard Seeds</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>3-4 years</td><td>2.5</td><td>0.5</td><td>3.29</td><td>10
+</td></tr><tr><td>Cumin Seeds</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>3</td><td>10
+</td></tr><tr><td>Fennel Seeds</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>3-4 years</td><td>2.5</td><td>0.5</td><td>4.25</td><td>10
+</td></tr><tr><td>Fenugreek Seeds</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>7 months</td><td>2.5</td><td>2</td><td>2.99</td><td>12
+</td></tr><tr><td>Peppercorns</td><td>65</td><td>70</td><td>NA</td><td>65</td><td>70</td><td>4 months</td><td>2.5</td><td>2</td><td>2.59</td><td>12
+</td></tr><tr><td>Poppy Seeds</td><td>65</td><td>70</td><td>NA</td><td>65</td><td>70</td><td>4 weeks</td><td>4</td><td>2</td><td>5</td><td>14
+</td></tr><tr><td>Sesame Seeds </td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 months</td><td>4</td><td>0.5</td><td>6</td><td>5
+</td></tr><tr><td>Carom Seeds</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>8 weeks</td><td>4</td><td>0.5</td><td>3.99</td><td>4
+</td></tr><tr><td>Dry Ginger</td><td>65</td><td>70</td><td>NA</td><td>85</td><td>85</td><td>3-4 years</td><td>2.5</td><td>3</td><td>2</td><td>4
+</td></tr><tr><td>Cardamom</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3-4 years</td><td>2</td><td>0.5</td><td>2.99</td><td>15
+</td></tr><tr><td>Cinnamom</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>14 days</td><td>2.5</td><td>0.5</td><td>4</td><td>15
+</td></tr><tr><td>Star anise</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>1 year</td><td>2.5</td><td>4</td><td>4.29</td><td>15
+</td></tr><tr><td>Cloves</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>1-2 years</td><td>2.5</td><td>0.5</td><td>2.5</td><td>20
+</td></tr><tr><td>Bay Leaf</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>12 months</td><td>2.5</td><td>3</td><td>3</td><td>10
+</td></tr><tr><td>Ginger Garlic Paste</td><td>32</td><td>38</td><td>NA</td><td>95</td><td>100</td><td>2-3 weeks</td><td>2.5</td><td>0.5</td><td>4.29</td><td>15
+</td></tr><tr><td>Turmeric Powder</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3-4 years</td><td>2.5</td><td>3</td><td>4</td><td>15
+</td></tr><tr><td>Chicken Masala</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>3 months</td><td>2.5</td><td>0.5</td><td>3</td><td>12
+</td></tr><tr><td>Red Chilli Powder</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>3-4 years</td><td>2.5</td><td>0.5</td><td>2.49</td><td>15
+</td></tr><tr><td>Coriander Powder</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>4</td><td>20
+</td></tr><tr><td>Garam Masala Powder</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>6 months</td><td>2.5</td><td>2</td><td>5.2</td><td>17
+</td></tr><tr><td>Black Pepper Powder</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3-4 months</td><td>2.5</td><td>0.5</td><td>3</td><td>18
+</td></tr><tr><td>Cumin Powder</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3-4 years</td><td>2.5</td><td>0.5</td><td>2</td><td>10
+</td></tr><tr><td> Nigella Seeds</td><td>65</td><td>70</td><td>NA</td><td>85</td><td>95</td><td>4 years</td><td>2.5</td><td>0.5</td><td>5.75</td><td>10
+</td></tr><tr><td>Soy Sauce</td><td>32</td><td>38</td><td>NA</td><td>95</td><td>95</td><td>3 years</td><td>2.5</td><td>0.5</td><td>2.99</td><td>12
+</td></tr><tr><td>Tomato Ketchup</td><td>32</td><td>38</td><td>NA</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>2.59</td><td>10
+</td></tr><tr><td>Chilli Sauce</td><td>32</td><td>38</td><td>NA</td><td>90</td><td>95</td><td>10 days</td><td>2.5</td><td>0.5</td><td>5</td><td>20
+</td></tr><tr><td>Vinegar</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>1 years</td><td>2.5</td><td>0.5</td><td>6</td><td>10
+</td></tr><tr><td>Mayonnaise</td><td>32</td><td>38</td><td>NA</td><td>65</td><td>75</td><td>3-4 months</td><td>2.5</td><td>0.5</td><td>3.99</td><td>20
+</td></tr><tr><td>Jam </td><td>32</td><td>38</td><td>NA</td><td>90</td><td>95</td><td>12-24 months</td><td>2.5</td><td>0.5</td><td>2</td><td>20
+</td></tr><tr><td>Cheese Spread</td><td>32</td><td>38</td><td>NA</td><td>85</td><td>95</td><td>3 months</td><td>2.5</td><td>0.5</td><td>2.99</td><td>20
+</td></tr><tr><td>Cheese Slices</td><td>32</td><td>38</td><td>NA</td><td>95</td><td>100</td><td>6 months</td><td>2.5</td><td>0.5</td><td>4</td><td>10
+</td></tr><tr><td>Cheese Block</td><td>32</td><td>38</td><td>NA</td><td>98</td><td>100</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>4.29</td><td>10
+</td></tr><tr><td>Plain Curd </td><td>32</td><td>38</td><td>NA</td><td>90</td><td>95</td><td>7 months</td><td>2.5</td><td>0.5</td><td>2.5</td><td>10
+</td></tr><tr><td>Paneer</td><td>32</td><td>38</td><td>NA</td><td>95</td><td>98</td><td>8 days</td><td>2.5</td><td>0.5</td><td>3</td><td>12
+</td></tr><tr><td>Fresh Cream</td><td>32</td><td>38</td><td>NA</td><td>95</td><td>95</td><td>7-10 days</td><td>2.5</td><td>0.5</td><td>2</td><td>14
+</td></tr><tr><td>Honey</td><td>65</td><td>70</td><td>NA</td><td>60</td><td>70</td><td>3 weeks</td><td>2.5</td><td>0.5</td><td>4.29</td><td>5
+</td></tr><tr><td>Cashews</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>6 months</td><td>4</td><td>0.5</td><td>4</td><td>4
+</td></tr><tr><td>Raisins</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>6-12 months</td><td>2.5</td><td>0.5</td><td>2</td><td>4
+</td></tr><tr><td>Almonds</td><td>65</td><td>70</td><td>NA</td><td>85</td><td>95</td><td>5 weeks</td><td>2.5</td><td>0.5</td><td>3</td><td>15
+</td></tr><tr><td>Dates</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>6-12 months</td><td>3.5</td><td>0.5</td><td>2.49</td><td>15
+</td></tr><tr><td>Peanuts</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>1</td><td>4</td><td>15
+</td></tr><tr><td> pista</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>6 months</td><td>4</td><td>0.5</td><td>5.2</td><td>20
+</td></tr><tr><td> dried  gooseberries</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>1 years</td><td>4</td><td>0.5</td><td>3</td><td>10
+</td></tr><tr><td>Yeast</td><td>32</td><td>38</td><td>NA</td><td>90</td><td>95</td><td>5 weeks</td><td>2.5</td><td>0.5</td><td>2</td><td>10
+</td></tr><tr><td>Baking Soda </td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>3 months</td><td>2.5</td><td>0.5</td><td>3.29</td><td>10
+</td></tr><tr><td>Baking Powder</td><td>65</td><td>70</td><td>NA</td><td>65</td><td>70</td><td>3 months</td><td>2.5</td><td>0.5</td><td>3</td><td>15
+</td></tr><tr><td>Cocoa Powder</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>90</td><td>3 years</td><td>3</td><td>0.5</td><td>4.25</td><td>15
+</td></tr><tr><td>Vanilla Extract</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>5.2</td><td>13
+</td></tr><tr><td>Condensed Milk</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>4 months</td><td>2.5</td><td>0.5</td><td>3</td><td>12
+</td></tr><tr><td>Cereal Boxes</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>3 days</td><td>2.5</td><td>0.5</td><td>2</td><td>15
+</td></tr><tr><td>Bread</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>4 weeks</td><td>2.5</td><td>0.5</td><td>3.29</td><td>20
+</td></tr><tr><td>Flavoured Yogurt</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>100</td><td>6 months</td><td>2.5</td><td>0.5</td><td>3</td><td>17
+</td></tr><tr><td>Biscuits</td><td>65</td><td>70</td><td>NA</td><td>98</td><td>100</td><td>1-2 days</td><td>2.5</td><td>0.5</td><td>4.25</td><td>18
+</td></tr><tr><td>Fried Packed Snacks</td><td>65</td><td>70</td><td>NA</td><td>90</td><td>95</td><td>4 months</td><td>2.5</td><td>0.5</td><td>5.75</td><td>10
+</td></tr><tr><td>Popcorn Packs</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>98</td><td>14 days</td><td>2.5</td><td>0.5</td><td>2.99</td><td>10
+</td></tr><tr><td>walnuts</td><td>65</td><td>70</td><td>NA</td><td>95</td><td>95</td><td>6 months</td><td>2.598290598</td><td>0.968803419</td><td>6</td><td>10
+</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
+</td></tr></tbody>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="dashboard.js"></script></body>
+</html>
+
+{% endblock body %}
